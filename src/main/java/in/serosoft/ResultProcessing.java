@@ -19,13 +19,14 @@ public class ResultProcessing {
 				grade = "Grade-A";
 			} else {
 				grade = "Grade-B";
+				
 			}
 			return grade;
 		}, 500, 200);
 		*/
 		
 		Grader grader=new Result()::gradeCompute;
-		String gradeObtained=computeGrade(grader, 500,340);
+		String gradeObtained=computeGrade(grader, 500, 340);
 		//String gradeObtained=computeGrade(Result::gradeCompute,500,340);
 		System.out.println(gradeObtained);
 	}
